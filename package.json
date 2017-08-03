@@ -1,11 +1,11 @@
 {
-  "name": "graphqlnode",
-  "version": "0.0.0",
-  "description": "Introduction to GraphQL in nodeJS",
-  "license": "GPL",
+  "name": "graphql-mongo",
+  "version": "0.0.1",
+  "description": "Introduction to GraphQL with Mongo in nodeJS",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bruno12mota/graphql-nodejs"
+    "url": "https://github.com/cojack/graphql-example"
   },
   "main": "src/index.js",
   "scripts": {
