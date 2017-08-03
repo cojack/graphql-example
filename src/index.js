@@ -16,15 +16,9 @@ app.use(urlencoded({extended: true}));
 // GraphqQL server route
 app.use('/graphql', graphqlHTTP(req => ({
   schema,
-  pretty: true
+  pretty: true,
+  graphiql: true
 })));
-
-/*app.post('/graphql', async (req, res) => {
-  const params = req.body;
-  console.log(params);
-  const response = await graphql(schema, params);
-  res.send(response);
-});*/
 
 // Connect mongo database
 mongoose.connect('mongodb://localhost:27017/graphql', {
