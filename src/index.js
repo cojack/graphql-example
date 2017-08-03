@@ -27,7 +27,9 @@ app.use('/graphql', graphqlHTTP(req => ({
 });*/
 
 // Connect mongo database
-mongoose.createConnection('mongodb://localhost:27017/graphql').on('open', () => {
+mongoose.connect('mongodb://localhost:27017/graphql', {
+  useMongoClient: true
+}).on('open', () => {
   console.log('Opened');
 });
 
